@@ -61,6 +61,6 @@ Web Tokens posted by publishers directly so that any other Virtual Public Square
 component may validate and ingest it all to create a new instance.
 ```
 curl --silent \
-https://broadcast.com/broadcast/latest.jsonl | \
+https://broadcast.ology.com/broadcast/latest.jsonl | \
 head -2 | jq
 ```
