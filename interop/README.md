@@ -42,7 +42,7 @@ as the content moves from Virtual Public Square to Virtual Public Square.
 The contents of a typical Virtual Public Square Feed can be examined with standard
 software tools. Simply GET the Feed over HTTPS and examine the data. Each line of
 a Feed contains an article of content, and each article of content identifies the
-publisher and contains a Javascript Web Signature that can be validated with the
+publisher and contains a JSON Web Signature that can be validated with the
 public key in the did:psqr identity of the publisher.
 
 ```
@@ -56,7 +56,7 @@ If there is a concern with the policies of any Virtual Public Square, the conten
 can easily be replicated and distributed in another Virtual Public Square operated
 by some other group.
 
-The broadcast firehose is also available as JSONL, but containing the Javascript
+The broadcast firehose is also available as JSONL, but containing the JSON
 Web Tokens posted by publishers directly so that any other Virtual Public Square
 component may validate and ingest it all to create a new instance.
 ```
