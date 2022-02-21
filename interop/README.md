@@ -64,3 +64,17 @@ curl --silent \
 https://broadcast.ology.com/broadcast/latest.jsonl | \
 head -2 | jq
 ```
+
+### Integrating a Website
+In most cases, publishers will choose to host their own identities, publish content,
+and cross-promote themselves within groups.
+
+The did:psqr method of the W3C Decentralized IDentity project attaches identity at the
+site domain level for the entire site, or on the profile URL of a specific author to
+identify authors distinctly. These identities are simple JSON files available at
+specific URLs when requested with specific request headers.
+
+Embedded site widgets are used to cross-promote among a group of websites.
+
+Sites running WordPress use the Virtual Public Square plugin to easily host identities
+and add widgets. The `psqr` command to create them and publish using them.

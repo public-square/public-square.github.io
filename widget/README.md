@@ -1,8 +1,11 @@
-## Virtual Public Square Website Widgets
+## Virtual Public Square Website Plugins & Widgets
 
 Website widgets display a list, a feed or a set of search results in an iframe
 on a website. High traffic publishers use PSQR widgets to exchange referral traffic
 within a group, enhancing reach and engagement for all participants.
+
+The `Virtual Public Square` WordPress plugin hosts `did:psqr` identities on WordPress
+site for the entire domain or individual authors.
 
 ### Exchanging Referral Traffic with Website Widgets
 
@@ -14,8 +17,10 @@ create will be used to sign that content, proving it is yours.
 The `psqr` command can be scripted to crawl sitemaps and RSS to publish new
 content to a Virtual Public Square. Refer to the CLI documentation for details.
 
-Note that if your site runs WordPress, the PSQR WordPress plugin handles identity
-and publishing to a Virtual Public Square. (Coming soon.)
+Note that if your site runs WordPress, the Virtual Public Square plugin handles
+identity, publishing to a Virtual Public Square (soon), and PSQR Widgets as
+blocks (soon). The plugin supports root domain identity for the entire site, and
+identities for individual authors which share the author profile URL.
 
 #### 2. Find Collaborators
 Reach out to other publishers you wish to exchange traffic with and ensuring they
@@ -32,3 +37,11 @@ To support curation, create a list specifically for you site and schedule the
 `psqr` command to update it periodically. Grant `curate` permission on this list
 to an instance of the web application for granular manual control over widget
 contents, including removing specific entries and adding others at will.
+
+#### 4. Add a Widget to Each Site in the Group
+Include a widget on each website as an iframe tag referencing the feed or list to
+display on that site. These widgets may all reference lists are curated individually,
+or they may share a singular list.
+
+If the sites run WordPress, the Virtual Public Square plugin is used to add Widgets
+as theme blocks (coming soon).
